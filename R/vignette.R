@@ -7,12 +7,8 @@ path <- "PvdAtimeLapse.mat"
 mat <- readMat(path)
 
 
-#pathPhase <- "/Users/jgodet/Seafile/Ma bibliothèque/MaximeLBP/StackFluo180424254180424.tif"
-#pathFluo <- "/Users/jgodet/Seafile/Ma bibliothèque/MaximeLBP/StackFluo180424.tif"
-
-
-pathPhase <-"/Users/jgodet/Seafile/Ma bibliothèque/Code/oufti2R/dataTest/PvdAtimeLapsePhase.tif"
-pathFluo <- "/Users/jgodet/Seafile/Ma bibliothèque/Code/oufti2R/dataTest/PvdAtimeLapseFluo.tif"
+pathPhase <-"PvdAtimeLapsePhase.tif"
+pathFluo <- "PvdAtimeLapseFluo.tif"
 
 imPhase <- oufti2R::readImage(pathPhase)
 imFluo <- oufti2R::readImage(pathFluo)
