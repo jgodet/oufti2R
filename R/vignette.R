@@ -3,8 +3,7 @@
 
 require(oufti2R)
 
-#path <- "/Users/jgodet/Seafile/Ma bibliothèque/MaximeLBP/Stack254180424results.mat"
-path <- "/Users/jgodet/Seafile/Ma bibliothèque/Code/oufti2R/dataTest/PvdAtimeLapse.mat"
+path <- "PvdAtimeLapse.mat"
 mat <- readMat(path)
 
 
