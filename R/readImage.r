@@ -16,10 +16,19 @@
 
 
 readImage<- function(pathImage){
+  # if(!require("EBImage")){
+  #   source("https://bioconductor.org/biocLite.R")
+  #   biocLite("EBImage")
+  # }
+  
   if(!require("EBImage")){
-    source("https://bioconductor.org/biocLite.R")
-    biocLite("EBImage")
+    if (!requireNamespace("BiocManager", quietly = TRUE)){
+      install.packages("BiocManager")
+    }
+    BiocManager::install("EBImage")
   }
+  
+  
   require("EBImage")
   image <- EBImage::readImage(pathImage)
   return(image)
